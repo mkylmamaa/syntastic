@@ -319,6 +319,13 @@ If you want to skip these checks when you issue |:wq|, |:x|, and |:ZZ|, set this
 variable to 0. >
     let g:syntastic_check_on_wq = 0
 <
+                                                  *'syntastic_check_on_write'*
+Default: 1
+Normally syntastic runs syntax checks whenever buffers are written to disk.
+If you want to skip these checks when you issue |:w|, set this
+variable to 0. >
+    let g:syntastic_check_on_write = 0
+<
                                                 *'syntastic_aggregate_errors'*
 Default: 0
 When enabled, syntastic runs all checkers that apply to the current filetype,
